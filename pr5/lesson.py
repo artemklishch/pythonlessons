@@ -1,0 +1,13 @@
+print(1 + 3)
+print(3 - 4)
+print(10 * 3)
+print(10 / 2)
+print(10 // 3)
+print(5 ** 2)
+print(25 ** 0.5)
+print(2 + 5 * 4)
+print((2 + 5) * 4)
+
+print(0.5 + 1.5)
+print(.5 + 1.5)
+print(0.1 + 0.2)
