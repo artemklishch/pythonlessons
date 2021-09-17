@@ -21,3 +21,34 @@ print(l)
 l2 = ['hi', 12]
 l += l2
 print(l)
+
+l.insert(1, 'test')
+print(l)
+
+l.remove('world')
+print(l)
+
+el = l.pop()
+el2 = l.pop(1)
+print(l, el, el2)
+
+pos1 = l.index("hello")
+print(pos1)
+
+l.insert(2, 'world')
+print(l.count("world"))
+
+l3 = ['hello', 'hi', 'David', 'test']
+l3.sort()
+print(l3)
+
+l4 = [1, 2, 3, 4, 5, 6, 7]
+l4.reverse()
+print(l4)
+l5 = l4.copy()
+print(l5)
+l4.clear()
+print(l4)
+print('h' > 'a')
+l5 = sorted(l5)
+print(l5)
