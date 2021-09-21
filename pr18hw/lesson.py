@@ -45,3 +45,30 @@ if is_there_space:
         string2 += i.capitalize()
     else:
         print(string2)
+
+l11 = [1, 2, 3]
+l22 = [i * 2 for i in l11]
+print('hw1', l22)
+
+res = 0
+for i in l11:
+    res += i ** 2
+print('hw2', res)
+
+
+time11 = 3
+time22 = 6.7
+time33 = 11.8
+print('hw3', int(time11 // 2))
+print('hw3', int(time22 // 2))
+print('hw3', int(time33 // 2))
+print('hw3', int(time11 / 2))
+print('hw3', int(time22 / 2))
+print('hw3', int(time33 / 2))
+
+string11 = 'Hello world'
+if " " in string11:
+    string11 = string11.upper()
+else:
+    string11.lower()
+print('hw4', string11)
