@@ -68,3 +68,6 @@ print('\n')
 
 s8 = frozenset('hello') # нелдьзя изменить
 print(s8)
+
+for i in s71:
+    print(i)
