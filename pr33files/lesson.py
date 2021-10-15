@@ -1,0 +1,16 @@
+f1 = open('file1.txt', 'r', encoding='utf-8')
+# text1 = f1.read(1)
+# text2 = f1.read(8)
+print(f1.encoding)
+text3 = f1.read()
+f1.close()
+
+# print(text1)
+# print(text2)
+print(text3)
+
+print('\n')
+f2 = open('file2.txt', 'a', encoding='utf-8')
+text4 = f2.read()
+f2.close()
+print(text4)
