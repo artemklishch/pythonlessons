@@ -18,17 +18,34 @@
 # print(test())
 
 
-def my_decorator(func):
-    def func_wrapper():
-        print("Code bofore")
-        func()
-        print("Code after")
-    return func_wrapper
+# def my_decorator(func):
+#     def func_wrapper():
+#         print("Code bofore")
+#         func()
+#         print("Code after")
+#     return func_wrapper
+
+# @my_decorator
+# def func_test():
+#     print("Hello, I am func 'func_test'")
+
+# test = my_decorator(func_test)
+# test()
+# func_test()
 
 
-def func_test():
-    print("Hello, I am func 'func_test'")
+def make_title(func):
+    def wrapped():
+        title = func()
+        title = title.capitalize()
+        title = title.replace(',', '')
+        return title
+    return wrapped
 
 
-test = my_decorator(func_test)
-test()
+@make_title
+def hi():
+    return "hello, world"
+
+
+print(hi())
